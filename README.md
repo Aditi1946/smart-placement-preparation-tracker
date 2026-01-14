@@ -1,5 +1,7 @@
 # 🎓 CareerConnect – Smart Campus Placement Portal
 
+# 🎓 CareerConnect – Smart Campus Placement Portal
+
 CareerConnect is an integrated **AI-powered platform** designed to streamline and elevate the campus placement experience for **students**, **training and placement officers (TPOs)**, and **recruiters**.
 
 It features advanced modules for **resume building**, **aptitude & technical tests**, **AI-proctored interviews**, and **performance analytics**, making students industry-ready and boosting placement outcomes.
@@ -123,76 +125,8 @@ To enable AI-powered features such as interview feedback and resume scoring usin
 
 2. Add the API key to the respective .env files:
 
-📁 MockInter/.env
-📁 ResumeATS/.env
+📁 MockInter/.env  
+📁 ResumeATS/.env  
 
+```env
 GEMINI_API_KEY=your_api_key_here
-
-⚠️ Make sure to replace your_api_key_here with your actual API key. Do not share this key publicly.
-
-3. Restart the modules (MockInterview & ResumeATS) after setting the environment variables.
-
----
-
-### Steps
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/CareerConnect.git
-cd CareerConnect
-```
-
-2. **Start the Node.js server**
-
-```bash
-node server.js
-```
-
-3. **Run each Streamlit module in a new terminal:**
-
-```bash
-# Aptitude Test
-cd Aptitude
-streamlit run AptiApp.py
-
-# Aptitude Dashboard
-streamlit run InteractiveDashboard.py
-
-# DSA Test
-cd ../CodingPract
-streamlit run DSA_app_db.py
-
-# DSA Dashboard
-streamlit run DSA_dash.py
-
-# Mock Interview
-cd ../MockInter
-streamlit run app.py
-
-# Resume Builder & ATS
-cd ../ResumeATS
-streamlit run app.py
-```
-
-4. **Launch the frontend**
-
-Open `index.html` in a browser.
-
----
-
-## 📈 Future Enhancements
-
-- Add support for regional languages  
-- Gamified tests with leaderboards  
-- Real-time placement drive tracking  
-- Admin dashboard with downloadable reports  
-- SMS/Email notification integration  
-- Mobile-friendly responsive design  
-
----
-
-## 🪪 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
